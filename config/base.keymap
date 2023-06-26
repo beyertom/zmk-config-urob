@@ -14,10 +14,11 @@
 #define DEF 0
 #define NAV 1
 #define FN 2
-#define NUM 3
-#define SYS 4
-#define UC 5
-#define MOUSE 6
+#define SYM 3
+#define NUM 4
+#define SYS 5
+#define UC 6
+#define MOUSE 7
 
 //#include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
@@ -247,7 +248,7 @@ ZMK_LAYER(base,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
     X_LB     &kp Z         &kp X         &kp C         &kp D         &kp V           X_MB     &kp K         &kp H         &comma_morph  &dot_morph    &qexcl          X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
-    X_LH                                              &lt NAV SPACE  &lt FN TAB      X_MH   &lt SYM RETURN  &lt NUM BSPC                                              X_RH
+    X_LH                                              &lt_spc NAV 0  &lt FN TAB      X_MH   &lt SYM RETURN  &lt NUM BSPC                                              X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
