@@ -222,8 +222,8 @@ ZMK_BEHAVIOR(win_sleep, macro,
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
 
 /* Keymap */
-ZMK_CONDITIONAL_LAYER(NAV NUM, FN)  // NAV + NUM --> FN
-ZMK_CONDITIONAL_LAYER(LSHFT SYM, SYS)  // NAV + NUM --> FN
+ZMK_CONDITIONAL_LAYER(SYM NUM, FN)  // SYM + NUM --> FN
+ZMK_CONDITIONAL_LAYER(NAV NUM, SYS)  // NAV + NUM --> SYS
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
